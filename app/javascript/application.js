@@ -9,14 +9,14 @@ setup({
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Comic Sans MS', 'cursive']
+        sans: ['Roboto Condensed', 'Arial', 'sans-serif']
       },
       colors: {
-        happy: {
-          yellow: '#FFD700',
-          pink: '#FF69B4',
-          blue: '#1E90FF',
-          green: '#32CD32'
+        adventure: {
+          forest: '#2C5F2D',
+          mountain: '#97BC62',
+          river: '#0C7489',
+          rock: '#5C4033'
         }
       }
     }
