@@ -18,15 +18,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
-  <body class="bg-gradient-to-r from-adventure-forest to-adventure-mountain min-h-screen">
-    <header class="bg-adventure-river p-4 shadow-lg">
+  <body class="bg-gradient-to-r from-adventure-forest to-adventure-mountain min-h-screen bg-texture">
+    <header class="bg-adventure-river p-4 shadow-lg flex items-center justify-center">
+      <svg class="w-8 h-8 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path>
+      </svg>
       <h1 class="text-4xl font-bold text-white text-center font-sans">Rails Quest Incubator</h1>
     </header>
     <main class="container mx-auto mt-8 p-4 bg-white rounded-lg shadow-xl">
       <%= yield %>
     </main>
-    <footer class="bg-adventure-rock p-4 mt-8 text-white text-center">
-      <p>&copy; 2024 Rails Quest Incubator - Forging paths through code and wilderness!</p>
+    <footer class="bg-adventure-rock p-4 mt-8 text-white">
+      <div class="container mx-auto flex items-center justify-between">
+        <p>&copy; 2024 Rails Quest Incubator - Forging paths through code and wilderness!</p>
+        <div class="flex space-x-4">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+          </svg>
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path>
+          </svg>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
